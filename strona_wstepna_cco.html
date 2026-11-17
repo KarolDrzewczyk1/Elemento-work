@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrum Cyberbezpieczeństwa Oświaty (CCO) | Cyberprzedszkole.pl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff', 100: '#e0f2fe', 500: '#0284c7', 600: '#0369a1',
+                            700: '#0353a4', 800: '#075985', 900: '#0c4a6e',
+                            lightBg: '#f8fafc', cardBg: '#ffffff', accent: '#0891b2', emerald: '#059669'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #0f172a; }
+        .glass-card { background: rgba(255, 255, 255, 0.88); backdrop-filter: blur(16px); border: 1px solid rgba(226, 232, 240, 0.9); box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.04); }
+        .text-gradient { background: linear-gradient(135deg, #0284c7 0%, #4f46e5 50%, #059669 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50">
+
+<header class="sticky top-0 z-50 glass-card border-b border-slate-200/80 px-4 lg:px-8 py-3.5">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="#" class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 via-blue-600 to-indigo-600 flex items-center justify-center font-black text-white text-xl">CCO</div>
+            <div>
+                <span class="font-bold text-base md:text-lg text-slate-900">Cyberprzedszkole.pl</span>
+                <span class="text-[11px] text-cyan-700 font-semibold block">Centrum Cyberbezpieczeństwa Oświaty • Elemento</span>
+            </div>
+        </a>
+        <nav class="hidden lg:flex items-center space-x-6 text-xs font-semibold text-slate-600">
+            <a href="#o-nas" class="hover:text-cyan-600">O Nas & Ekspert</a>
+            <a href="#programy" class="hover:text-cyan-600">Programy</a>
+            <a href="#filary" class="hover:text-cyan-600">4 Filary</a>
+            <a href="#test-kri" class="hover:text-amber-600 font-bold">★ Test Gotowości KRI</a>
+            <a href="#pakiety" class="hover:text-cyan-600">Pakiety MRR</a>
+        </nav>
+        <a href="#kontakt" class="text-xs font-bold px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-600 to-blue-600 text-white">Zamów Konsultację</a>
+    </div>
+</header>
+
+<main class="flex-grow max-w-7xl w-full mx-auto p-4 md:p-8 space-y-16">
+
+    <!-- HERO -->
+    <section class="relative rounded-3xl p-8 md:p-14 glass-card border border-slate-200/80 overflow-hidden min-h-[520px] flex flex-col justify-center bg-gradient-to-br from-white via-slate-50/50 to-cyan-50/30">
+        <div class="relative z-10 max-w-3xl space-y-6">
+            <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-100/90 border border-cyan-200 text-cyan-800 text-xs font-bold">
+                <span class="w-2 h-2 rounded-full bg-cyan-600 animate-pulse"></span>
+                <span>Dedykowana opieka IT dla żłobków, przedszkoli i szkół (JSFP)</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                Centrum Cyberbezpieczeństwa Oświaty – <span class="text-gradient">Bezpieczeństwo dzieci zaczyna się od ochrony ich danych</span>
+            </h1>
+            <p class="text-slate-600 text-base md:text-lg leading-relaxed">
+                Proaktywna cyberochrona w modelu abonamentowym (MRR). Zdejmujemy z dyrektorów pełną odpowiedzialność techniczną i prawną. Zgodność z <strong>KRI, RODO, KSC oraz NIS2</strong>. Metodyka zgodna z normą ISO/IEC 27001 oraz Krajowymi Ramami Interoperacyjności.
+            </p>
+            <div class="pt-4 flex flex-wrap items-center gap-4">
+                <a href="#test-kri" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-cyan-600 via-blue-600 to-indigo-600 text-white font-bold text-sm shadow-xl">Bezpłatny Test Gotowości KRI (3 min)</a>
+                <a href="#kontakt" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-100 text-slate-800 font-semibold text-sm border border-slate-300">Konsultacja z ekspertem</a>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-slate-200">
+                <div><div class="text-2xl font-black text-cyan-600">100%</div><div class="text-xs text-slate-500">Zgodności z KRI & RODO</div></div>
+                <div><div class="text-2xl font-black text-blue-600">3-2-1</div><div class="text-xs text-slate-500">Standard backupu</div></div>
+                <div><div class="text-2xl font-black text-emerald-600">10+</div><div class="text-xs text-slate-500">lat doświadczenia inż. Wize</div></div>
+                <div><div class="text-2xl font-black text-purple-600">Elemento</div><div class="text-xs text-slate-500">Lokalny serwis Słupsk</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O NAS / EKSPERT -->
+    <section id="o-nas" class="space-y-8 scroll-mt-24">
+        <div class="text-center max-w-2xl mx-auto space-y-3">
+            <span class="text-xs font-bold text-cyan-600 uppercase tracking-widest">Lokalny ekspert i partner</span>
+            <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900">Inż. Bartłomiej Wize – Główny Ekspert CCO</h2>
+            <p class="text-slate-500 text-sm">Ponad 10 lat doświadczenia inżynieryjnego z salonu komputerowego Elemento w Słupsku. Audytor wewnętrzny SZBI zgodny z metodyką ISO/IEC 27001 i KRI.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card p-6 rounded-2xl space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center text-2xl">🛡️</div>
+                <h3 class="font-bold text-slate-900">Odpowiedzialność prawna</h3>
+                <p class="text-slate-600 text-xs">Zdejmujemy z dyrektora osobistą odpowiedzialność za KRI, KSC i NIS2. Dyrektorowi grożą kary do 100% wynagrodzenia – my to bierzemy na siebie.</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center text-2xl">💻</div>
+                <h3 class="font-bold text-slate-900">Zaplecze Elemento</h3>
+                <p class="text-slate-600 text-xs">Salon komputerowy Elemento (ul. Leszczyńskiego 1/3, Słupsk). Szybka reakcja lokalna, helpdesk i serwis sprzętu.</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl space-y-4">
+                <div class="w-12 h-12 rounded-xl bg-emerald-100 flex items-center justify-center text-2xl">🏫</div>
+                <h3 class="font-bold text-slate-900">Dane wrażliwe dzieci</h3>
+                <p class="text-slate-600 text-xs">Chronimy dane medyczne, alergie, wizerunki, CCTV i rejestracje dzieci – zgodnie z Ustawą Kamilka i RODO.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMY -->
+    <section id="programy" class="space-y-8 scroll-mt-24">
+        <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900">Programy CCO</h2>
+            <p class="text-slate-500 text-sm">Dopasowane do typu placówki.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="glass-card p-6 rounded-2xl border-l-4 border-cyan-500">
+                <h3 class="font-bold text-lg">CyberŻłobek</h3>
+                <p class="text-xs text-slate-600 mt-2">Dla żłobków: dane medyczne, alergie, diety, CCTV, rejestracje wejść.</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl border-l-4 border-blue-500">
+                <h3 class="font-bold text-lg">CyberPrzedszkole</h3>
+                <p class="text-xs text-slate-600 mt-2">Dla przedszkoli: higiena cyfrowa, ochrona wizerunku, KRI i RODO.</p>
+            </div>
+            <div class="glass-card p-6 rounded-2xl border-l-4 border-emerald-500">
+                <h3 class="font-bold text-lg">CyberSzkoła</h3>
+                <p class="text-xs text-slate-600 mt-2">Dla szkół podstawowych: zakaz telefonów od 2026, VLAN, backup, szkolenia kadry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 FILARY (skrócone z oryginału) -->
+    <section id="filary" class="glass-card rounded-3xl p-8 space-y-8">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">4 Filary Opieki</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-5 bg-slate-50 rounded-2xl"><strong>1. Zgodność</strong><p class="text-xs mt-2">PBI, IZSI, Rejestr Aktywów, audyty KRI.</p></div>
+            <div class="p-5 bg-slate-50 rounded-2xl"><strong>2. Bezpieczeństwo</strong><p class="text-xs mt-2">EDR, patch management, VLAN, MFA.</p></div>
+            <div class="p-5 bg-slate-50 rounded-2xl"><strong>3. Backup 3-2-1</strong><p class="text-xs mt-2">3 kopie, 2 nośniki, 1 offline – odporne na ransomware.</p></div>
+            <div class="p-5 bg-slate-50 rounded-2xl"><strong>4. Reakcja & Szkolenia</strong><p class="text-xs mt-2">CyberImpuls, procedury KSC/CSIRT, helpdesk Elemento.</p></div>
+        </div>
+    </section>
+
+    <!-- TEST KRI (prosty) -->
+    <section id="test-kri" class="glass-card rounded-3xl p-8 border border-amber-300 space-y-6 bg-gradient-to-br from-amber-50/40 to-white">
+        <h2 class="text-2xl md:text-3xl font-extrabold">Test Gotowości KRI (wstępny)</h2>
+        <p class="text-sm text-slate-600">Odpowiedz na kilka pytań, żeby zobaczyć luki. Pełna wersja z raportem PDF wkrótce.</p>
+        <div class="space-y-4 text-sm">
+            <p>1. Czy macie aktualne PBI i IZSI? <br><span class="text-xs text-slate-500">Jeśli nie – ryzyko kontroli.</span></p>
+            <p>2. Backup w standardzie 3-2-1 (chmura + offline)? <br><span class="text-xs text-slate-500">Pendrive w szufladzie to nie backup.</span></p>
+            <p>3. Sieć Wi-Fi rodziców oddzielona od administracji i CCTV (VLAN)?</p>
+            <p>4. Szkolenia kadry z phishingu i KSC?</p>
+        </div>
+        <a href="#kontakt" class="inline-block px-6 py-3 rounded-xl bg-amber-500 text-white font-bold">Zamów pełny audyt zerowy</a>
+    </section>
+
+    <!-- PAKIETY -->
+    <section id="pakiety" class="space-y-6">
+        <h2 class="text-2xl md:text-3xl font-extrabold text-center">Pakiety abonamentowe (MRR)</h2>
+        <div class="overflow-x-auto glass-card rounded-2xl p-4">
+            <table class="w-full text-xs">
+                <thead class="bg-slate-100">
+                    <tr><th class="p-3 text-left">Zakres</th><th class="p-3">Audyt</th><th class="p-3">Opieka</th><th class="p-3 bg-cyan-100">Full (Cyber...)</th></tr>
+                </thead>
+                <tbody class="divide-y">
+                    <tr><td class="p-3">Dokumentacja KRI / PBI / IZSI</td><td class="text-center text-emerald-600">✓</td><td class="text-center">—</td><td class="text-center text-emerald-600">✓</td></tr>
+                    <tr><td class="p-3">Backup 3-2-1 chmura CCO</td><td class="text-center">—</td><td class="text-center text-emerald-600">✓</td><td class="text-center text-emerald-600">✓</td></tr>
+                    <tr><td class="p-3">EDR + VLAN + Patch</td><td class="text-center">—</td><td class="text-center text-emerald-600">✓</td><td class="text-center text-emerald-600">✓</td></tr>
+                    <tr><td class="p-3">Szkolenia CyberImpuls + Helpdesk</td><td class="text-center">opcja</td><td class="text-center text-emerald-600">✓</td><td class="text-center text-emerald-600">✓</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-center text-xs text-slate-500">Kalkulator pakietów na podstawie liczby komputerów – w przygotowaniu (wstępna wersja strony).</p>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="glass-card rounded-3xl p-8 grid md:grid-cols-2 gap-8">
+        <div>
+            <h2 class="text-2xl font-extrabold">Kontakt</h2>
+            <p class="text-sm text-slate-600 mt-2">Salon Komputerowy Elemento / CCO<br>ul. Leszczyńskiego 1/3, 76-200 Słupsk<br>Bartłomiej Wize<br>serwis@cyberprzedszkole.com<br>+48 510 289 914</p>
+        </div>
+        <form class="space-y-3 bg-slate-50 p-6 rounded-2xl">
+            <input type="text" placeholder="Nazwa placówki" class="w-full text-xs px-3 py-2 rounded-xl border" required>
+            <input type="text" placeholder="Imię i nazwisko / stanowisko" class="w-full text-xs px-3 py-2 rounded-xl border" required>
+            <input type="text" placeholder="Email lub telefon" class="w-full text-xs px-3 py-2 rounded-xl border" required>
+            <button type="button" onclick="alert('Wstępna strona – formularz wkrótce podpięty do CRM / Google Apps Script')" class="w-full py-3 rounded-xl bg-cyan-600 text-white font-bold text-xs">Wyślij zgłoszenie</button>
+        </form>
+    </section>
+
+</main>
+
+<footer class="border-t bg-white px-4 py-8 text-xs text-slate-500 text-center">
+    © 2026 Centrum Cyberbezpieczeństwa Oświaty • Elemento Słupsk • Metodyka zgodna z ISO/IEC 27001 i KRI
+</footer>
+
+</body>
+</html>
