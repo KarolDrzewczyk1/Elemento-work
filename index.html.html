@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCO | Cyberprzedszkole.pl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glow-cyan { box-shadow: 0 0 20px rgba(6, 182, 212, 0.4); }
+        .glow-text { text-shadow: 0 0 12px rgba(6, 182, 212, 0.6); }
+        .float { animation: float 4s ease-in-out infinite; }
+        .pulse-glow { animation: pulseGlow 2s infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+        @keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 15px rgba(6, 182, 212, 0.3); } 50% { box-shadow: 0 0 30px rgba(6, 182, 212, 0.7); } }
+        .hover-glow:hover { transform: translateY(-4px); box-shadow: 0 0 25px rgba(6, 182, 212, 0.5); transition: all 0.3s; }
+        .fade-in { animation: fadeIn 0.8s ease-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-cyan-950 text-white min-h-screen">
+
+<header class="bg-slate-900/70 backdrop-blur border-b border-cyan-800/50 sticky top-0 z-20">
+    <div class="max-w-5xl mx-auto px-4 py-3.5 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-cyan-400 to-blue-500 flex items-center justify-center text-white font-black text-sm glow-cyan">CCO</div>
+            <div>
+                <div class="font-bold">Cyberprzedszkole.pl</div>
+                <div class="text-[11px] text-cyan-300">Centrum Cyberbezpieczeństwa Oświaty</div>
+            </div>
+        </div>
+        <div class="flex items-center gap-3">
+            <button onclick="toggleChat()" class="text-xs border border-cyan-400 text-cyan-300 px-3 py-2 rounded-lg hover:bg-cyan-500/20 pulse-glow">Zapytaj AI</button>
+            <a href="#kontakt" class="text-xs bg-cyan-500 text-white px-4 py-2 rounded-lg glow-cyan">Kontakt</a>
+        </div>
+    </div>
+</header>
+
+<main class="max-w-5xl mx-auto px-4 py-12 space-y-16">
+
+    <!-- HERO -->
+    <section class="text-center fade-in">
+        <div class="inline-block px-4 py-1.5 bg-cyan-500/20 border border-cyan-400/50 text-cyan-300 text-xs font-semibold rounded-full mb-6 pulse-glow">Opieka IT dla placówek oświatowych</div>
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-4 glow-text">Bezpieczeństwo dzieci zaczyna się od ochrony ich danych</h1>
+        <p class="text-lg text-slate-300 max-w-2xl mx-auto mb-8">Prosta i skuteczna opieka cyberbezpieczeństwa. Zdejmujemy odpowiedzialność z dyrektora.</p>
+        <a href="#programy" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-8 py-3.5 rounded-xl font-semibold glow-cyan hover:scale-105 transition">Zobacz programy</a>
+    </section>
+
+    <!-- PROGRAMY -->
+    <section id="programy" class="fade-in">
+        <h2 class="text-2xl font-bold text-center mb-8 text-cyan-300">Programy</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-slate-800/70 border border-cyan-500/30 p-6 rounded-2xl hover-glow float">
+                <h3 class="font-bold text-lg mb-2 text-cyan-300">CyberŻłobek</h3>
+                <p class="text-sm text-slate-300">Dane medyczne, alergie, CCTV i rejestracje dzieci.</p>
+            </div>
+            <div class="bg-slate-800/70 border border-blue-500/30 p-6 rounded-2xl hover-glow" style="animation-delay: 0.2s;">
+                <h3 class="font-bold text-lg mb-2 text-blue-300">CyberPrzedszkole</h3>
+                <p class="text-sm text-slate-300">Ochrona wizerunku, KRI i higiena cyfrowa.</p>
+            </div>
+            <div class="bg-slate-800/70 border border-emerald-500/30 p-6 rounded-2xl hover-glow" style="animation-delay: 0.4s;">
+                <h3 class="font-bold text-lg mb-2 text-emerald-300">CyberSzkoła</h3>
+                <p class="text-sm text-slate-300">Sieć, backup i szkolenia kadry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CO ROBIMY -->
+    <section class="fade-in">
+        <h2 class="text-2xl font-bold text-center mb-8 text-cyan-300">Co robimy</h2>
+        <div class="grid md:grid-cols-2 gap-5">
+            <div class="bg-gradient-to-r from-cyan-500/20 to-transparent border border-cyan-500/40 p-5 rounded-xl hover-glow">Dokumentacja KRI i RODO</div>
+            <div class="bg-gradient-to-r from-blue-500/20 to-transparent border border-blue-500/40 p-5 rounded-xl hover-glow">Backup 3-2-1 odporny na ransomware</div>
+            <div class="bg-gradient-to-r from-emerald-500/20 to-transparent border border-emerald-500/40 p-5 rounded-xl hover-glow">Separacja sieci (VLAN)</div>
+            <div class="bg-gradient-to-r from-purple-500/20 to-transparent border border-purple-500/40 p-5 rounded-xl hover-glow">Szkolenia i procedury incydentów</div>
+        </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="bg-slate-800/60 border border-cyan-500/40 rounded-3xl p-8 text-center fade-in glow-cyan">
+        <h2 class="text-2xl font-bold mb-4 text-cyan-300">Kontakt</h2>
+        <p class="text-slate-300 mb-6">Elemento / CCO – Słupsk<br>Bartłomiej Wize<br>serwis@cyberprzedszkole.com<br>+48 510 289 914</p>
+        <button onclick="toggleChat()" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-3 rounded-xl font-semibold glow-cyan">Napisz do chatbota</button>
+    </section>
+
+</main>
+
+<footer class="text-center text-sm text-slate-400 py-8 border-t border-cyan-900/50">
+    © 2026 Centrum Cyberbezpieczeństwa Oświaty
+</footer>
+
+<!-- CHATBOT -->
+<div id="chatModal" class="fixed inset-0 bg-black/60 hidden flex items-center justify-center z-50 p-4">
+    <div class="bg-slate-800 border border-cyan-500/50 rounded-2xl w-full max-w-md h-[500px] flex flex-col shadow-2xl glow-cyan">
+        <div class="p-4 border-b border-cyan-700/50 flex justify-between items-center">
+            <div>
+                <div class="font-bold text-sm text-cyan-300">Wirtualny Audytor CCO</div>
+                <div class="text-xs text-emerald-400">● Online</div>
+            </div>
+            <button onclick="toggleChat()" class="text-2xl text-slate-400">&times;</button>
+        </div>
+        <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-3 text-sm">
+            <div class="bg-slate-700 p-3 rounded-2xl max-w-[85%] text-slate-200">
+                Cześć! Pytaj o backup 3-2-1, KRI, VLAN albo cokolwiek związanego z bezpieczeństwem placówki.
+            </div>
+        </div>
+        <form onsubmit="sendMessage(event)" class="p-3 border-t border-cyan-700/50 flex gap-2">
+            <input id="chatInput" type="text" placeholder="Napisz pytanie..." class="flex-1 bg-slate-700 border border-cyan-600/50 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-400">
+            <button type="submit" class="bg-cyan-500 text-white px-4 py-2 rounded-xl text-sm">Wyślij</button>
+        </form>
+    </div>
+</div>
+
+<script>
+function toggleChat() {
+    document.getElementById('chatModal').classList.toggle('hidden');
+}
+
+function sendMessage(e) {
+    e.preventDefault();
+    const input = document.getElementById('chatInput');
+    const msg = input.value.trim();
+    if (!msg) return;
+
+    const messages = document.getElementById('chatMessages');
+    
+    const userDiv = document.createElement('div');
+    userDiv.className = 'bg-cyan-600 text-white p-3 rounded-2xl max-w-[85%] ml-auto text-right';
+    userDiv.textContent = msg;
+    messages.appendChild(userDiv);
+    input.value = '';
+    messages.scrollTop = messages.scrollHeight;
+
+    setTimeout(() => {
+        const botDiv = document.createElement('div');
+        botDiv.className = 'bg-slate-700 p-3 rounded-2xl max-w-[85%] text-slate-200';
+        const lower = msg.toLowerCase();
+        
+        if (lower.includes('backup') || lower.includes('kopia') || lower.includes('3-2-1')) {
+            botDiv.textContent = 'Backup 3-2-1: 3 kopie danych, 2 nośniki, 1 kopia offline. Chroni przed ransomware.';
+        } else if (lower.includes('kri') || lower.includes('pbi') || lower.includes('dokument')) {
+            botDiv.textContent = 'Robimy PBI, IZSI i Rejestr Aktywów – wszystko zgodnie z KRI.';
+        } else if (lower.includes('vlan') || lower.includes('sieć') || lower.includes('wifi')) {
+            botDiv.textContent = 'Oddzielamy sieć administracji, CCTV i gości za pomocą VLAN.';
+        } else {
+            botDiv.textContent = 'Dzięki za pytanie! Najlepiej umów się na konsultację – przygotujemy plan dla placówki.';
+        }
+        
+        messages.appendChild(botDiv);
+        messages.scrollTop = messages.scrollHeight;
+    }, 500);
+}
+</script>
+
+</body>
+</html>
