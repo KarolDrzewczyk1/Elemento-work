@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinie i certyfikaty | CyberPrzedszkole</title>
+    <meta name="description" content="Opinie klientów, porównanie przed i po audycie oraz certyfikaty.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="border-b border-cyan-900/40 sticky top-0 bg-black/85 backdrop-blur-md z-50">
+    <div class="max-w-6xl mx-auto px-5 py-3.5 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-cyan-400 flex items-center justify-center text-black font-black text-sm glow-pulse">CCO</div>
+            <div>
+                <span class="font-semibold text-shine text-sm sm:text-base">CyberPrzedszkole</span>
+                <div class="text-[10px] text-slate-500 hidden sm:block">Centrum Cyberbezpieczeństwa Oświaty</div>
+            </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-5 text-sm text-slate-300">
+            <a href="index.html" class="hover:text-cyan-300 transition">Start</a>
+            <a href="programy.html" class="hover:text-cyan-300 transition">Programy</a>
+            <a href="proces.html" class="hover:text-cyan-300 transition">Proces</a>
+            <a href="pakiety.html" class="hover:text-cyan-300 transition">Pakiety</a>
+            <a href="opinie.html" class="text-cyan-300">Opinie</a>
+            <a href="faq.html" class="hover:text-cyan-300 transition">FAQ</a>
+            <a href="kontakt.html" class="hover:text-cyan-300 transition">Kontakt</a>
+        </nav>
+        <button onclick="toggleChat()" class="border border-cyan-400 text-cyan-300 px-3.5 py-1.5 rounded-lg text-sm glow-pulse hover:bg-cyan-400/10 transition">Zapytaj AI</button>
+    </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-5 py-16">
+    <h1 class="text-3xl sm:text-4xl font-bold text-center mb-10 text-shine">Opinie klientów</h1>
+    <div class="grid sm:grid-cols-2 gap-4 mb-16">
+        <div class="bg-black/50 border border-cyan-500/25 p-5 rounded-xl">
+            <p class="text-sm text-slate-300 italic mb-3">„Profesjonalne podejście od audytu do wdrożenia. Polecam!”</p>
+            <div class="text-xs text-cyan-400">Dyrektor Przedszkola Miejskiego w Słupsku</div>
+        </div>
+        <div class="bg-black/50 border border-cyan-500/25 p-5 rounded-xl">
+            <p class="text-sm text-slate-300 italic mb-3">„Szkolenia były świetne, pracownicy zaczęli bardziej ostrożnie obchodzić się z danymi.”</p>
+            <div class="text-xs text-cyan-400">Dyrektor Szkoły Podstawowej</div>
+        </div>
+        <div class="bg-black/50 border border-cyan-500/25 p-5 rounded-xl">
+            <p class="text-sm text-slate-300 italic mb-3">„Raport zawierał konkretne, wdrażalne rekomendacje. Wdzięczni za wsparcie po audycie.”</p>
+            <div class="text-xs text-cyan-400">Referent Przedszkola Miejskiego w Słupsku</div>
+        </div>
+        <div class="bg-black/50 border border-cyan-500/25 p-5 rounded-xl">
+            <p class="text-sm text-slate-300 italic mb-3">„24/7 monitoring dał nam pełny spokój. Świetna obsługa klienta.”</p>
+            <div class="text-xs text-cyan-400">Dyrektor Przedszkola Miejskiego w Słupsku</div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl font-bold text-center mb-8 text-shine">Przedtem vs. Po Audycie</h2>
+    <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-16">
+        <div class="bg-red-950/30 border border-red-500/30 rounded-2xl p-6">
+            <h3 class="font-bold text-red-300 mb-4">❌ Przed audytem</h3>
+            <div class="space-y-3 text-sm">
+                <div class="flex justify-between"><span class="text-slate-400">Zagrożenia</span><span class="text-red-300 font-semibold">15+</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Zgodność RODO</span><span class="text-red-300 font-semibold">40%</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Bezpieczeństwo sieci</span><span class="text-red-300 font-semibold">35%</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Ochrona danych</span><span class="text-red-300 font-semibold">25%</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Ryzyko incydentu</span><span class="text-red-300 font-semibold">65%</span></div>
+            </div>
+        </div>
+        <div class="bg-emerald-950/30 border border-emerald-500/30 rounded-2xl p-6">
+            <h3 class="font-bold text-emerald-300 mb-4">✅ Po audycie</h3>
+            <div class="space-y-3 text-sm">
+                <div class="flex justify-between"><span class="text-slate-400">Zagrożenia</span><span class="text-emerald-300 font-semibold">2</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Zgodność RODO</span><span class="text-emerald-300 font-semibold">95%</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Bezpieczeństwo sieci</span><span class="text-emerald-300 font-semibold">90%</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Ochrona danych</span><span class="text-emerald-300 font-semibold">98%</span></div>
+                <div class="flex justify-between"><span class="text-slate-400">Ryzyko incydentu</span><span class="text-emerald-300 font-semibold">5%</span></div>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="text-2xl font-bold text-center mb-8 text-shine">Certyfikaty i partnerzy</h2>
+    <div class="grid sm:grid-cols-3 gap-4 mb-8">
+        <div class="bg-black/50 border border-cyan-500/25 p-4 rounded-xl text-center">
+            <div class="text-2xl mb-2">🏅</div>
+            <div class="text-sm font-medium text-cyan-200">Notebook Master</div>
+            <div class="text-xs text-slate-500 mt-1">Szkolenia i certyfikacja z cyberbezpieczeństwa</div>
+        </div>
+        <div class="bg-black/50 border border-cyan-500/25 p-4 rounded-xl text-center">
+            <div class="text-2xl mb-2">🏆</div>
+            <div class="text-sm font-medium text-cyan-200">Certyfikowany Partner GData</div>
+            <div class="text-xs text-slate-500 mt-1">Endpoint Security</div>
+        </div>
+        <div class="bg-black/50 border border-cyan-500/25 p-4 rounded-xl text-center">
+            <div class="text-2xl mb-2">📜</div>
+            <div class="text-sm font-medium text-cyan-200">Certyfikacja GDPR / RODO</div>
+            <div class="text-xs text-slate-500 mt-1">Usługi zgodne z europejskim standardem</div>
+        </div>
+    </div>
+    <div class="flex flex-wrap justify-center gap-3 text-xs text-slate-400">
+        <span class="px-3 py-1.5 bg-slate-900/80 border border-slate-700 rounded-full">Lenovo ThinkCentre</span>
+        <span class="px-3 py-1.5 bg-slate-900/80 border border-slate-700 rounded-full">MikroTik</span>
+        <span class="px-3 py-1.5 bg-slate-900/80 border border-slate-700 rounded-full">Microsoft</span>
+        <span class="px-3 py-1.5 bg-slate-900/80 border border-slate-700 rounded-full">Google Workspace</span>
+        <span class="px-3 py-1.5 bg-slate-900/80 border border-slate-700 rounded-full">GData</span>
+        <span class="px-3 py-1.5 bg-slate-900/80 border border-slate-700 rounded-full">Ashampoo</span>
+    </div>
+</main>
+
+<footer class="text-center text-sm text-slate-500 py-10 border-t border-cyan-900/30">
+    <div class="max-w-6xl mx-auto px-5">
+        <div class="mb-2">© 2026 Centrum Cyberbezpieczeństwa Oświaty · CyberPrzedszkole</div>
+    </div>
+</footer>
+
+<div id="chatModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-4" role="dialog" aria-modal="true">
+    <div class="bg-black border border-cyan-500/60 rounded-2xl w-full max-w-md h-[520px] flex flex-col glow-pulse">
+        <div class="p-4 border-b border-cyan-800 flex justify-between items-center">
+            <div>
+                <div class="font-bold text-sm text-cyan-300">Wirtualny Audytor CCO</div>
+                <div class="text-xs text-emerald-400 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-dot"></span> Online</div>
+            </div>
+            <button onclick="toggleChat()" class="text-2xl text-slate-400 hover:text-white leading-none">&times;</button>
+        </div>
+        <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-3 text-sm">
+            <div class="bg-slate-900 p-3 rounded-2xl max-w-[85%] text-slate-300 border border-cyan-900">Cześć! Pytaj o cokolwiek.</div>
+        </div>
+        <form onsubmit="sendMessage(event)" class="p-3 border-t border-cyan-800 flex gap-2">
+            <input id="chatInput" type="text" placeholder="Twoje pytanie..." class="flex-1 bg-slate-900 border border-cyan-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-400">
+            <button type="submit" class="bg-cyan-400 text-black px-4 py-2 rounded-xl text-sm font-bold">Wyślij</button>
+        </form>
+    </div>
+</div>
+<script src="js/chat.js"></script>
+</body>
+</html>

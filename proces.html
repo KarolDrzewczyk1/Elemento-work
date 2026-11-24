@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jak działamy | CyberPrzedszkole</title>
+    <meta name="description" content="6 etapów współpracy: analiza, raport, wdrożenie, szkolenia, monitoring i stałe wsparcie IT.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="border-b border-cyan-900/40 sticky top-0 bg-black/85 backdrop-blur-md z-50">
+    <div class="max-w-6xl mx-auto px-5 py-3.5 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-cyan-400 flex items-center justify-center text-black font-black text-sm glow-pulse">CCO</div>
+            <div>
+                <span class="font-semibold text-shine text-sm sm:text-base">CyberPrzedszkole</span>
+                <div class="text-[10px] text-slate-500 hidden sm:block">Centrum Cyberbezpieczeństwa Oświaty</div>
+            </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-5 text-sm text-slate-300">
+            <a href="index.html" class="hover:text-cyan-300 transition">Start</a>
+            <a href="programy.html" class="hover:text-cyan-300 transition">Programy</a>
+            <a href="proces.html" class="text-cyan-300">Proces</a>
+            <a href="pakiety.html" class="hover:text-cyan-300 transition">Pakiety</a>
+            <a href="opinie.html" class="hover:text-cyan-300 transition">Opinie</a>
+            <a href="faq.html" class="hover:text-cyan-300 transition">FAQ</a>
+            <a href="kontakt.html" class="hover:text-cyan-300 transition">Kontakt</a>
+        </nav>
+        <button onclick="toggleChat()" class="border border-cyan-400 text-cyan-300 px-3.5 py-1.5 rounded-lg text-sm glow-pulse hover:bg-cyan-400/10 transition">Zapytaj AI</button>
+    </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-5 py-16">
+    <h1 class="text-3xl sm:text-4xl font-bold text-center mb-3 text-shine">Jak działamy</h1>
+    <p class="text-center text-slate-400 text-sm mb-12">Sześć etapów od analizy do stałej opieki</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+        <div class="bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-500/40 p-5 rounded-xl hover-lift">
+            <div class="text-cyan-400 font-black text-2xl mb-2">01</div>
+            <h3 class="font-semibold text-cyan-200 mb-1.5">Analiza</h3>
+            <p class="text-sm text-slate-400">Audyt infrastruktury IT, sieci, komputerów, urządzeń mobilnych, serwerów i procedur bezpieczeństwa.</p>
+        </div>
+        <div class="bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-500/40 p-5 rounded-xl hover-lift">
+            <div class="text-cyan-400 font-black text-2xl mb-2">02</div>
+            <h3 class="font-semibold text-cyan-200 mb-1.5">Raport</h3>
+            <p class="text-sm text-slate-400">Szczegółowy raport z zagrożeniami i wdrażalnymi rekomendacjami zgodnymi z wytycznymi KRI i RODO.</p>
+        </div>
+        <div class="bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-500/40 p-5 rounded-xl hover-lift">
+            <div class="text-cyan-400 font-black text-2xl mb-2">03</div>
+            <h3 class="font-semibold text-cyan-200 mb-1.5">Wdrożenie</h3>
+            <p class="text-sm text-slate-400">Instalacja rozwiązań, modernizacja sieci, systemy backupu, konfiguracja zabezpieczeń i procedur.</p>
+        </div>
+        <div class="bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-500/40 p-5 rounded-xl hover-lift">
+            <div class="text-cyan-400 font-black text-2xl mb-2">04</div>
+            <h3 class="font-semibold text-cyan-200 mb-1.5">Szkolenia</h3>
+            <p class="text-sm text-slate-400">Szkolenia personelu, testy phishingowe i warsztaty bezpieczeństwa w ramach programu CyberPrzedszkole.</p>
+        </div>
+        <div class="bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-500/40 p-5 rounded-xl hover-lift">
+            <div class="text-cyan-400 font-black text-2xl mb-2">05</div>
+            <h3 class="font-semibold text-cyan-200 mb-1.5">Monitoring</h3>
+            <p class="text-sm text-slate-400">Stały monitoring 24/7 i wsparcie techniczne w razie potrzeby – pełny spokój dyrekcji.</p>
+        </div>
+        <div class="bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-500/40 p-5 rounded-xl hover-lift">
+            <div class="text-cyan-400 font-black text-2xl mb-2">06</div>
+            <h3 class="font-semibold text-cyan-200 mb-1.5">Wsparcie IT</h3>
+            <p class="text-sm text-slate-400">Aktualizacje, konsultacje i audyty kontrolne co roku. Umowa na 12 miesięcy z miesięcznym wypowiedzeniem.</p>
+        </div>
+    </div>
+
+    <h2 class="text-2xl font-bold text-center mb-8 text-shine">Co konkretnie robimy</h2>
+    <div class="grid sm:grid-cols-2 gap-4">
+        <div class="bg-black/50 border border-cyan-500/30 p-5 rounded-xl hover-lift flex gap-4 items-start">
+            <span class="text-cyan-400 text-xl">📄</span>
+            <div>
+                <h3 class="font-semibold text-cyan-200 mb-1">Dokumentacja KRI i RODO</h3>
+                <p class="text-sm text-slate-400">PBI, IZSI, rejestr aktywów, polityki bezpieczeństwa i procedury reagowania dopasowane do placówki.</p>
+            </div>
+        </div>
+        <div class="bg-black/50 border border-cyan-500/30 p-5 rounded-xl hover-lift flex gap-4 items-start">
+            <span class="text-cyan-400 text-xl">💾</span>
+            <div>
+                <h3 class="font-semibold text-cyan-200 mb-1">Backup 3-2-1 odporny na ransomware</h3>
+                <p class="text-sm text-slate-400">3 kopie danych, 2 różne nośniki, 1 kopia offline – standard chroniący przed szyfrowaniem.</p>
+            </div>
+        </div>
+        <div class="bg-black/50 border border-cyan-500/30 p-5 rounded-xl hover-lift flex gap-4 items-start">
+            <span class="text-cyan-400 text-xl">🔌</span>
+            <div>
+                <h3 class="font-semibold text-cyan-200 mb-1">Separacja sieci (VLAN)</h3>
+                <p class="text-sm text-slate-400">Oddzielamy sieć administracji, CCTV, gości i urządzenia edukacyjne.</p>
+            </div>
+        </div>
+        <div class="bg-black/50 border border-cyan-500/30 p-5 rounded-xl hover-lift flex gap-4 items-start">
+            <span class="text-cyan-400 text-xl">👨‍🏫</span>
+            <div>
+                <h3 class="font-semibold text-cyan-200 mb-1">Szkolenia i testy phishingowe</h3>
+                <p class="text-sm text-slate-400">Cykliczne szkolenia kadry + praktyczne testy phishingowe.</p>
+            </div>
+        </div>
+        <div class="bg-black/50 border border-cyan-500/30 p-5 rounded-xl hover-lift flex gap-4 items-start">
+            <span class="text-cyan-400 text-xl">🛡️</span>
+            <div>
+                <h3 class="font-semibold text-cyan-200 mb-1">Antywirus + monitoring</h3>
+                <p class="text-sm text-slate-400">Oficjalny partner GData. Monitoring antywirusa i wykrywanie malware.</p>
+            </div>
+        </div>
+        <div class="bg-black/50 border border-cyan-500/30 p-5 rounded-xl hover-lift flex gap-4 items-start">
+            <span class="text-cyan-400 text-xl">🖥️</span>
+            <div>
+                <h3 class="font-semibold text-cyan-200 mb-1">Serwis i administracja</h3>
+                <p class="text-sm text-slate-400">Konserwacja sprzętu, administracja sieci, wsparcie Office / Google Workspace.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="text-center text-sm text-slate-500 py-10 border-t border-cyan-900/30">
+    <div class="max-w-6xl mx-auto px-5">
+        <div class="mb-2">© 2026 Centrum Cyberbezpieczeństwa Oświaty · CyberPrzedszkole</div>
+    </div>
+</footer>
+
+<div id="chatModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50 p-4" role="dialog" aria-modal="true">
+    <div class="bg-black border border-cyan-500/60 rounded-2xl w-full max-w-md h-[520px] flex flex-col glow-pulse">
+        <div class="p-4 border-b border-cyan-800 flex justify-between items-center">
+            <div>
+                <div class="font-bold text-sm text-cyan-300">Wirtualny Audytor CCO</div>
+                <div class="text-xs text-emerald-400 flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-dot"></span> Online</div>
+            </div>
+            <button onclick="toggleChat()" class="text-2xl text-slate-400 hover:text-white leading-none">&times;</button>
+        </div>
+        <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-3 text-sm">
+            <div class="bg-slate-900 p-3 rounded-2xl max-w-[85%] text-slate-300 border border-cyan-900">Cześć! Pytaj o proces, backup, KRI lub cokolwiek.</div>
+        </div>
+        <form onsubmit="sendMessage(event)" class="p-3 border-t border-cyan-800 flex gap-2">
+            <input id="chatInput" type="text" placeholder="Twoje pytanie..." class="flex-1 bg-slate-900 border border-cyan-700 rounded-xl px-3 py-2 text-sm text-white focus:outline-none focus:border-cyan-400">
+            <button type="submit" class="bg-cyan-400 text-black px-4 py-2 rounded-xl text-sm font-bold">Wyślij</button>
+        </form>
+    </div>
+</div>
+<script src="js/chat.js"></script>
+</body>
+</html>
